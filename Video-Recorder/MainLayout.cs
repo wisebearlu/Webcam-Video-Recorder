@@ -93,7 +93,7 @@ namespace Video_Recorder
             try
             {
                 FFMpeg.ReplaceAudio("video.mp4", "audio.wav", outputPath + DateTime.Now.ToString("yyyy_MM_dd_HH_mm_ss") + ".mp4", true);
-                MessageBox.Show("Recording Finished", "Recording has been saved.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Recording Finished", "Recording has been saved.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 StripStatusLabel.Text = $"Recording saved to {outputPath} with the filename {DateTime.Now.ToString("yyyy_MM_dd_HH_mm_ss")}.mp4";
             }
             catch (Exception ex)
